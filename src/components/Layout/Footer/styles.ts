@@ -24,6 +24,21 @@ export const StyledFooter = styled('footer')`
         &:last-of-type {
             justify-content: flex-end;
         }
+
+        button {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            background: none;
+            border: none;
+            cursor: pointer;
+
+            img {
+                width: 30px;
+                border-radius: 4px;
+            }
+        }
     }
 
     @media (max-width: 800px) {
@@ -36,6 +51,10 @@ export const StyledFooter = styled('footer')`
             align-items: center !important;
             justify-content: center !important;
             text-align: center;
+
+            &:first-of-type {
+                flex-direction: column;
+            }
         }
     }
 

@@ -2,23 +2,19 @@ import { createSlice } from '@reduxjs/toolkit'
 import { initialState } from './consts'
 
 export type MetadataState = {
-    imageView: {
-        open: boolean
-        url: string
-    }
+    language: 'en' | 'gr'
 }
 
 export const metadataSlice = createSlice({
     name: 'metadata',
     initialState: initialState,
     reducers: {
-        setImageView: (state, action) => {
-            state.imageView.open = action.payload.open
-            state.imageView.url = action.payload.url
+        setLanguage: (state, action) => {
+            state.language = action.payload
         },
     },
 })
 
-export const { setImageView } = metadataSlice.actions
+export const { setLanguage } = metadataSlice.actions
 
 export default metadataSlice.reducer
