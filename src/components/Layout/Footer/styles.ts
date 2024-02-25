@@ -34,8 +34,8 @@ export const StyledFooter = styled('footer')`
             border: none;
             cursor: pointer;
 
-            img {
-                width: 30px;
+            svg {
+                width: 32px;
                 border-radius: 4px;
             }
         }
