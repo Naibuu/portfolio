@@ -25,7 +25,8 @@ export default function Footer() {
     return (
         <StyledFooter>
             <div>
-                <Tooltip content={t('language')} hideOnClick={false}>
+                {/* TODO: Move to a settings modal */}
+                {/* <Tooltip content={t('language')} hideOnClick={false}>
                     <button onClick={() => toggleLanguage()}>
                         {language == 'en' ? (
                             <svg
@@ -61,7 +62,7 @@ export default function Footer() {
                             </svg>
                         )}
                     </button>
-                </Tooltip>
+                </Tooltip> */}
                 <p>
                     Copyright © {new Date().getFullYear()}. Naibuu.{' '}
                     {t('footer-rights-served')}
