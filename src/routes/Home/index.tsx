@@ -1,9 +1,6 @@
 import { PageWrapper, StyledLanding } from './styles'
 import { motion } from 'framer-motion'
 
-/** Hooks */
-import { useTranslation} from '~hooks/useTranslation'
-
 /** Components */
 import Logo from '~components/Shared/Logo'
 import Mail from '~components/Shared/Mail'
@@ -13,12 +10,13 @@ import { SocialProps } from '~components/Shared/Social/types'
 import Socials from '~data/Socials'
 
 export default function Home() {
-    const t = useTranslation()
-
     return (
         <PageWrapper>
             <StyledLanding>
-                <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }}>
+                <motion.div
+                    initial={{ opacity: 0 }}
+                    animate={{ opacity: 1 }}
+                >
                     <Logo />
                 </motion.div>
                 <motion.p
@@ -26,7 +24,8 @@ export default function Home() {
                     animate={{ opacity: 1 }}
                     transition={{ delay: 0.1 }}
                 >
-                    {t('landing-description')}
+                    A hobby programmer and student from Greece who specializes
+                    in frontend web development.
                 </motion.p>
                 <motion.div
                     initial={{ opacity: 0 }}

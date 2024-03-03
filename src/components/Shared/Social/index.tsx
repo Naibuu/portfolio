@@ -1,5 +1,5 @@
 import { StyledSocial } from './styles'
-import { SocialProps } from './types'
+import type { SocialProps } from './types'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
 export default function Social(props: SocialProps) {
