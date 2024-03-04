@@ -2,7 +2,6 @@ import styled from 'styled-components'
 
 export const StyledFooter = styled('footer')`
     width: 100%;
-    max-width: 1000px;
     margin: 125px auto 0 auto;
 
     display: flex;
@@ -18,7 +17,7 @@ export const StyledFooter = styled('footer')`
         align-items: center;
         gap: 10px;
 
-        font-size: 13px;
+        font-size: 15px;
         font-weight: 500;
 
         &:last-of-type {
@@ -41,7 +40,7 @@ export const StyledFooter = styled('footer')`
         }
     }
 
-    @media (max-width: 800px) {
+    @media (max-width: 1000px) {
         flex-direction: column;
         justify-content: center;
         align-items: center;

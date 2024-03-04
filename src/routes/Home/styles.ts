@@ -21,20 +21,20 @@ export const StyledLanding = styled('div')`
     align-items: flex-start;
 
     svg.brand {
-        height: 110px;
-        width: 180px;
+        height: 125px;
+        width: 200px;
     }
 
     > p {
         color: var(--ui-lightgray);
         line-height: 25px;
-        font-size: 15px;
+        font-size: 16px;
         font-weight: 500;
         max-width: 400px;
     }
 
     > div {
-        margin-top: 15px;
+        margin-top: 20px;
 
         display: flex;
         align-items: center;

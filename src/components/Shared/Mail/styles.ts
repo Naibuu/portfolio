@@ -2,7 +2,7 @@ import styled from 'styled-components'
 
 export const StyledMail = styled('a')`
     height: 36px;
-    width: 200px;
+    width: 220px;
     padding: 0 10px;
 
     display: flex;
@@ -13,7 +13,7 @@ export const StyledMail = styled('a')`
     box-shadow: 0 0.5px 0 #ffffff30 inset;
     border-radius: 6px;
 
-    font-size: 14px;
+    font-size: 15px;
     font-weight: 500;
 
     svg {

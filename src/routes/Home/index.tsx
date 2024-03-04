@@ -9,7 +9,7 @@ import Social from '~components/Shared/Social'
 import { SocialProps } from '~components/Shared/Social/types'
 import Socials from '~data/Socials'
 
-export default function Home() {
+export const HomePage = () => {
     return (
         <PageWrapper>
             <StyledLanding>
