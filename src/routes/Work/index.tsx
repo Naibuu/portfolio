@@ -78,6 +78,10 @@ export const WorkPage = () => {
                                     style={{
                                         transform: `translateX(${-(carouselIndex * 100)}%)`,
                                     }}
+                                    onClick={() =>
+                                        carouselIndex != index &&
+                                        setCarouselIndex(index)
+                                    }
                                 />
                             ),
                         )}
