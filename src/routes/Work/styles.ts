@@ -55,7 +55,6 @@ export const StyledCarousel = styled('div')`
         &.translucent {
             opacity: 0.2;
             filter: saturate(0);
-            cursor: pointer;
         }
     }
 

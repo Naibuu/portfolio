@@ -36,8 +36,17 @@ export const WorkPage = () => {
         },
         {
             id: 3,
+            alt: 'CheatBreaker',
+        },
+        {
+            id: 4,
             alt: 'Vtube center',
         },
+        // fuck you nox
+        // {
+        //     id: 5,
+        //     alt: 'Titanic'
+        // },
     ]
 
     return (
