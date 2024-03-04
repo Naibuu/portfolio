@@ -8,7 +8,7 @@ interface Particle {
     velocity: number
 }
 
-export default function Lightbar() {
+export const Lightbar = () => {
     const canvasRef = useRef<HTMLCanvasElement>(null)
 
     useEffect(() => {

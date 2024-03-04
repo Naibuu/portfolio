@@ -1,11 +1,15 @@
+import { Link } from '~components/Shared/Link'
+import { useNavigate } from 'react-router-dom'
 import { StyledFooter } from './styles'
 
 /** Components */
-import Social from '~components/Shared/Social'
+import { Social } from '~components/Shared/Social'
 import { SocialProps } from '~components/Shared/Social/types'
-import Socials from '~data/Socials'
+import { Socials } from '~data/Socials'
 
-export default function Footer() {
+export const Footer = () => {
+    const navigate = useNavigate()
+
     return (
         <StyledFooter>
             <div>
@@ -13,6 +17,13 @@ export default function Footer() {
                     Copyright © {new Date().getFullYear()}. Naibuu. All rights
                     reserved.
                 </p>
+                <Link
+                    text="Work"
+                    onClick={() => {
+                        navigate('/work')
+                        scrollTo(0, 0)
+                    }}
+                />
             </div>
             <div>
                 {Socials.map((props: SocialProps, index: number) => (

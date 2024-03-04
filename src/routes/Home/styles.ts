@@ -25,22 +25,22 @@ export const StyledLanding = styled('div')`
         width: 200px;
     }
 
-    > p {
+    p {
+        max-width: 400px;
+        margin-bottom: 15px;
+
         color: var(--ui-lightgray);
         line-height: 25px;
         font-size: 16px;
         font-weight: 500;
-        max-width: 400px;
     }
 
-    > div {
-        margin-top: 20px;
-
+    div {
         display: flex;
         align-items: center;
         gap: 5px;
 
-        > div {
+        div {
             display: flex;
             align-items: center;
             gap: 5px;
@@ -51,16 +51,9 @@ export const StyledLanding = styled('div')`
         width: 100%;
         align-items: center;
 
-        > p {
+        p {
             text-align: center;
-            max-width: 380px !important;
-        }
-    }
-
-    @media (max-width: 500px) {
-        > div {
-            flex-direction: column;
-            gap: 2px;
+            max-width: 380px;
         }
     }
 `

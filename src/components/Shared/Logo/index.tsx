@@ -1,6 +1,6 @@
 import { LogoProps } from './types'
 
-export default function Logo(props: LogoProps) {
+export const Logo = (props: LogoProps) => {
     return (
         <svg
             className={props.className ? props.className : 'brand'}

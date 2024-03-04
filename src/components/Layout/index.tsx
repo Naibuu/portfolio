@@ -5,8 +5,8 @@ import styled from 'styled-components'
 import { AnimatePresence, motion } from 'framer-motion'
 
 /** Components */
-import Lightbar from './Lightbar'
-import Footer from './Footer'
+import { Lightbar } from './Lightbar'
+import { Footer } from './Footer'
 
 const StyledLayout = styled('div')`
     display: flex;
@@ -20,7 +20,7 @@ const Content = styled('main')<{ $e: boolean }>`
     height: fit-content;
     width: 100%;
     max-width: 1000px;
-    margin: ${(props) => props.$e ? '110px auto 0 auto' : '0 auto'};
+    margin: ${(props) => (props.$e ? '100px auto 0 auto' : '0 auto')};
 
     display: flex;
     flex-direction: column;
@@ -53,9 +53,13 @@ const ReturnButton = styled(motion.button)`
     b {
         font-weight: 600;
     }
+
+    @media (max-width: 1000px) {
+        margin-left: 15px;
+    }
 `
 
-export default function Layout({ children }: { children: ReactNode }) {
+export const Layout = ({ children }: { children: ReactNode }) => {
     const navigate = useNavigate()
     const location = useLocation()
 
@@ -86,3 +90,5 @@ export default function Layout({ children }: { children: ReactNode }) {
         </StyledLayout>
     )
 }
+
+export default Layout
