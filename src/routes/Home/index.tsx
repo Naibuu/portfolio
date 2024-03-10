@@ -36,7 +36,6 @@ export const HomePage = () => {
                         ))}
                     </div>
                 </Fade>
-                
             </StyledLanding>
         </PageWrapper>
     )

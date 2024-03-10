@@ -1,7 +1,7 @@
 import { StyledTooltip } from './styles'
 import type { TippyProps } from '@tippyjs/react'
 
-export const Tooltip = (props: TippyProps) => {
+export function Tooltip(props: TippyProps) {
     const { children, ...tippyProps } = props
 
     return <StyledTooltip {...tippyProps}>{props.children}</StyledTooltip>
