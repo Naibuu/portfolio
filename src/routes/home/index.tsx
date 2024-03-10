@@ -1,12 +1,12 @@
-import { PageWrapper } from '~components/shared/pageWrapper'
+import { PageWrapper } from '~components/pageWrapper'
 import { StyledLanding } from './styles'
 
 /** Components */
-import { Logo } from '~components/shared/logo'
-import { Mail } from '~components/shared/mail'
-import { Social } from '~components/shared/social'
+import { Logo } from '~components/logo'
+import { Mail } from '~components/mail'
+import { Social } from '~components/social'
 
-import { SocialProps } from '~components/shared/social/types'
+import { SocialProps } from '~components/social/types'
 import { Socials } from '~data/socials'
 
 /** Animations */

@@ -2,9 +2,9 @@ import { useNavigate } from 'react-router-dom'
 import { StyledFooter } from './styles'
 
 /** Components */
-import { Link } from '~components/shared/link'
-import { Social } from '~components/shared/social'
-import { SocialProps } from '~components/shared/social/types'
+import { Link } from '~components/link'
+import { Social } from '~components/social'
+import { SocialProps } from '~components/social/types'
 import { Socials } from '~data/socials'
 
 export const Footer = () => {

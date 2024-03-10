@@ -1,5 +1,5 @@
 import { useState } from 'react'
-import { PageWrapper } from '~components/shared/pageWrapper'
+import { PageWrapper } from '~components/pageWrapper'
 import { StyledCarousel, StyledWork } from './styles'
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'

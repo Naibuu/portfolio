@@ -1,4 +1,4 @@
-import { PageWrapper } from "~components/shared/pageWrapper"
+import { PageWrapper } from "~components/pageWrapper"
 
 export const JourneyPage = () => {
     return (

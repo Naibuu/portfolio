@@ -9,7 +9,7 @@ export const Fade = (props: MotionProps) => {
             animate={{ opacity: 1 }}
             {...MotionProps}
         >
-            {props.children}
+            {children}
         </motion.div>
     )
 }

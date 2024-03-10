@@ -1,4 +1,4 @@
-import { SocialProps } from '~components/shared/social/types'
+import { SocialProps } from '~components/social/types'
 import { faXTwitter, faGithub } from '@fortawesome/free-brands-svg-icons'
 
 export const Socials: SocialProps[] = [
