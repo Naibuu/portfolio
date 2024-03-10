@@ -5,8 +5,8 @@ import styled from 'styled-components'
 import { AnimatePresence, motion } from 'framer-motion'
 
 /** Components */
-import { Lightbar } from './Lightbar'
-import { Footer } from './Footer'
+import { Lightbar } from './lightbar'
+import { Footer } from './footer'
 
 const StyledLayout = styled('div')`
     display: flex;

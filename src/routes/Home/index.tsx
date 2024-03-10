@@ -1,15 +1,16 @@
-import { PageWrapper, StyledLanding } from './styles'
+import { PageWrapper } from '~components/shared/pageWrapper'
+import { StyledLanding } from './styles'
 
 /** Components */
-import { Logo } from '~components/Shared/Logo'
-import { Mail } from '~components/Shared/Mail'
-import { Social } from '~components/Shared/Social'
+import { Logo } from '~components/shared/logo'
+import { Mail } from '~components/shared/mail'
+import { Social } from '~components/shared/social'
 
-import { SocialProps } from '~components/Shared/Social/types'
-import { Socials } from '~data/Socials'
+import { SocialProps } from '~components/shared/social/types'
+import { Socials } from '~data/socials'
 
 /** Animations */
-import { Fade } from '~components/Animation/Fade'
+import { Fade } from '~components/animation/fade'
 
 export const HomePage = () => {
     return (

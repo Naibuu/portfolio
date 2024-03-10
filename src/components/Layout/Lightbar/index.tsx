@@ -37,7 +37,7 @@ export const Lightbar = () => {
                 if (particle.opacity > 0) {
                     ctx.fillStyle = `rgba(255, 255, 255, ${particle.opacity})`
                     ctx.beginPath()
-                    ctx.arc(particle.x, particle.y, 0.8, 0, Math.PI * 2)
+                    ctx.arc(particle.x, particle.y, 0.4, 0, Math.PI * 2)
                     ctx.fill()
                 } else {
                     particles.splice(index, 1)

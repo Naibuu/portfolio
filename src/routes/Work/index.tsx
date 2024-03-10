@@ -1,5 +1,6 @@
 import { useState } from 'react'
-import { PageWrapper, StyledCarousel, StyledWork } from './styles'
+import { PageWrapper } from '~components/shared/pageWrapper'
+import { StyledCarousel, StyledWork } from './styles'
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import {
@@ -8,7 +9,7 @@ import {
 } from '@fortawesome/free-solid-svg-icons'
 
 /** Animations */
-import { Fade } from '~components/Animation/Fade'
+import { Fade } from '~components/animation/fade'
 
 export const WorkPage = () => {
     const [carouselIndex, setCarouselIndex] = useState(0)

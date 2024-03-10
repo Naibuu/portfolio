@@ -1,12 +1,12 @@
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
 
 /** Components */
-import Layout from '~components/Layout'
+import Layout from '~components/layout'
 
 /** Routes */
-import { HomePage } from '~routes/Home'
-import { WorkPage } from '~routes/Work'
-import { ErrorRedirect } from '~routes/ErrorRedirect'
+import { HomePage } from '~routes/home'
+import { WorkPage } from '~routes/work'
+import { ErrorRedirect } from '~routes/errorRedirect'
 
 export default function App() {
     return (

@@ -1,11 +1,11 @@
-import { Link } from '~components/Shared/Link'
 import { useNavigate } from 'react-router-dom'
 import { StyledFooter } from './styles'
 
 /** Components */
-import { Social } from '~components/Shared/Social'
-import { SocialProps } from '~components/Shared/Social/types'
-import { Socials } from '~data/Socials'
+import { Link } from '~components/shared/link'
+import { Social } from '~components/shared/social'
+import { SocialProps } from '~components/shared/social/types'
+import { Socials } from '~data/socials'
 
 export const Footer = () => {
     const navigate = useNavigate()
