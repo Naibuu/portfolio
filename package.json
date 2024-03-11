@@ -17,13 +17,11 @@
         "@fortawesome/react-fontawesome": "^0.2.0",
         "@tippyjs/react": "^4.2.6",
         "framer-motion": "^11.0.8",
-        "million": "^3.0.4",
         "prettier": "^3.2.5",
         "react": "^18.2.0",
         "react-dom": "^18.2.0",
         "react-router-dom": "^6.22.2",
-        "styled-components": "^6.1.8",
-        "vite-tsconfig-paths": "^4.3.1"
+        "styled-components": "^6.1.8"
     },
     "devDependencies": {
         "@commitlint/cli": "^19.0.3",
@@ -37,7 +35,9 @@
         "eslint-plugin-react-hooks": "^4.6.0",
         "eslint-plugin-react-refresh": "^0.4.5",
         "husky": "^9.0.11",
+        "million": "^3.0.4",
         "typescript": "^5.3.3",
-        "vite": "^5.1.4"
+        "vite": "^5.1.4",
+        "vite-tsconfig-paths": "^4.3.1"
     }
 }
