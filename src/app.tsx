@@ -5,7 +5,7 @@ import Layout from '~components/layout'
 
 /** Routes */
 import { HomePage } from '~routes/home'
-import { JourneyPage } from '~routes/journey'
+import { TimelinePage } from '~routes/timeline'
 import { WorkPage } from '~routes/work'
 import { ErrorRedirect } from '~routes/errorRedirect'
 
@@ -15,7 +15,7 @@ export default function App() {
             <Layout>
                 <Routes>
                     <Route path="/" element={<HomePage />} />
-                    <Route path="/journey" element={<JourneyPage />} />
+                    <Route path="/timeline" element={<TimelinePage />} />
                     <Route path="/work" element={<WorkPage />} />
                     <Route path="*" element={<ErrorRedirect />} />
                 </Routes>
