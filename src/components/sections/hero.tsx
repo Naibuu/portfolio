@@ -1,29 +1,31 @@
 import { useRef } from 'react'
 import { motion, useScroll, useTransform } from 'framer-motion'
-import Bitmoji from '../../assets/bitmoji/drink.png'
+
+import Bitmoji from '~/assets/bitmoji/chill.png'
 
 export default function Hero() {
-    const ref = useRef(null)
+    const ref = useRef<HTMLElement>(null)
     const { scrollYProgress } = useScroll({
         target: ref,
         offset: ['start start', 'end start'],
     })
 
-    const parallaxY = useTransform(scrollYProgress, (y) => y * 200)
+    const parallaxY = useTransform(scrollYProgress, (y) => y * 5)
 
     const imageBlur = useTransform(
         scrollYProgress,
-        (blur) => `blur(${blur * 10}px)`,
+        [0.5, 0],
+        ['blur(5px)', 'blur(0px)'],
     )
 
     const textBlur = useTransform(
         scrollYProgress,
-        [0.15, 0],
-        ['blur(0px)', 'blur(2px)'],
+        [0.5, 0],
+        ['blur(0px)', 'blur(1px)'],
     )
 
     return (
-        <section ref={ref} className="py-24 px-2 flex flex-col items-center">
+        <section ref={ref} className="flex flex-col items-center">
             <div className="max-w-[32em] flex flex-col justify-center items-center">
                 {/**
                  * Bitmoji
