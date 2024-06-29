@@ -51,7 +51,7 @@ export default function Hero() {
                  * Hero Text
                  */}
 
-                <h1 className="-translate-y-12 text-transparent text-3xl text-center text-amber-100 font-semibold max-sm:text-xl max-sm:max-w-[300px]">
+                <h1 className="-translate-y-12 text-3xl text-center text-amber-100 font-semibold max-sm:text-xl max-sm:max-w-[300px]">
                     A{' '}
                     <span className="text-transparent font-bold bg-gradient-to-t from-amber-500 to-amber-300 bg-clip-text">
                         self-taught
