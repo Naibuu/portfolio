@@ -10,18 +10,18 @@ export default function Hero() {
         offset: ['start start', 'end start'],
     })
 
-    const parallaxY = useTransform(scrollYProgress, (y) => y * 5)
+    const parallaxY = useTransform(scrollYProgress, (y) => y * 10)
 
     const imageBlur = useTransform(
         scrollYProgress,
-        [0.5, 0],
-        ['blur(5px)', 'blur(0px)'],
+        [0.3, 0],
+        ['blur(3px)', 'blur(0px)'],
     )
 
     const textBlur = useTransform(
         scrollYProgress,
-        [0.5, 0],
-        ['blur(0px)', 'blur(1px)'],
+        [0.3, 0],
+        ['blur(0px)', 'blur(0.5px)'],
     )
 
     return (
@@ -51,7 +51,7 @@ export default function Hero() {
                  * Hero Text
                  */}
 
-                <h1 className="-translate-y-12 text-transparent text-3xl text-center font-semibold bg-gradient-to-t from-amber-100 to-amber-50 bg-clip-text max-sm:text-xl">
+                <h1 className="-translate-y-12 text-transparent text-3xl text-center text-amber-100 font-semibold max-sm:text-xl max-sm:max-w-[300px]">
                     A{' '}
                     <span className="text-transparent font-bold bg-gradient-to-t from-amber-500 to-amber-300 bg-clip-text">
                         self-taught

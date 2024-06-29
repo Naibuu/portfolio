@@ -30,7 +30,7 @@ export default function Work() {
             {/**
              * Projects Map
              */}
-            <div className="p-1 gap-3 columns-2 max-sm:columns-1">
+            <div className="p-1 flex flex-col gap-3">
                 {Projects.map((item, index) => (
                     <a
                         key={index}
@@ -39,8 +39,8 @@ export default function Work() {
                         onMouseEnter={() => setHovered(index)}
                         className={classNames(
                             isHovered(index)
-                                ? 'blur-0'
-                                : 'blur-[1px] max-sm:blur-0',
+                                ? 'blur-0 opacity-100'
+                                : 'blur-[1px] max-sm:blur-0 opacity-50',
                             'relative p-4 flex flex-col gap-2 mb-3 transition cursor-pointer',
                         )}
                     >
