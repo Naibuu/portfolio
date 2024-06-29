@@ -10,7 +10,7 @@ export default function Hero() {
         offset: ['start start', 'end start'],
     })
 
-    const parallaxY = useTransform(scrollYProgress, (y) => y * 10)
+    const parallaxY = useTransform(scrollYProgress, (y) => y * 30)
 
     const imageBlur = useTransform(
         scrollYProgress,
